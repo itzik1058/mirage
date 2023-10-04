@@ -1,0 +1,23 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "mirage"
+version = "0.1.0"
+description = ""
+authors = ["Itzik <itzik1058@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.306"
+platformdirs = "^3.11.0"
+python-telegram-bot = "^20.6"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+ruff = "^0.0.292"
+mypy = "^1.5.1"
+python-dotenv = "^1.0.0"
