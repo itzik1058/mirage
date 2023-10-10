@@ -11,5 +11,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         f"{update.effective_message.chat_id}",
     )
 
+
 application = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
 application.add_handler(CommandHandler("start", start))
